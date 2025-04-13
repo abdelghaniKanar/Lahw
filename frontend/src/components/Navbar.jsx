@@ -45,7 +45,7 @@ function Navbar() {
           {/* Theme Toggle Button with Image */}
           <button onClick={() => setIsDark(!isDark)} aria-label="Toggle Theme">
             <img
-              src={isDark ? darkIcon : lightIcon}
+              src={isDark ? lightIcon : darkIcon}
               alt="Theme Icon"
               className="h-6 w-6 object-contain"
             />
