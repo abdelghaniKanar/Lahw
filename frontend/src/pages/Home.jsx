@@ -2,6 +2,7 @@ import { useState } from "react";
 import HeroSlider from "../components/HeroSlider";
 import CompanyScroller from "../components/CompanyScroller";
 import SearchFilter from "../components/SearchFilter";
+import MovieList from "../components/MovieList";
 import { movies } from "../data/movies";
 
 function Home() {
@@ -42,6 +43,7 @@ function Home() {
         onSort={setSortOrder}
         onFilter={setCategoryFilter}
       />
+      <MovieList movies={filteredMovies} />
     </main>
   );
 }
